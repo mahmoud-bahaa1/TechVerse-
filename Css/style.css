@@ -10,3 +10,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+  .parent .child1,
+  .child2,
+  .child3,
+  .child4 {
+    width: 100%;
+  }
+}
