@@ -20,7 +20,7 @@ The platform idea was chosen to apply Bootstrap components in a realistic educat
 
 
 
-Technologies Used
+Technologies Used:-
 
 HTML5
 
