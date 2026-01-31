@@ -18,7 +18,7 @@
     <!--Nav bar start-->
     <nav
       id="Home"
-      class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+      class="navbar navbar-expand-lg bg-dark fixed-top border-bottom border-body"
       data-bs-theme="dark"
     >
       <div class="container">
@@ -39,12 +39,18 @@
             <li class="nav-item">
               <a class="nav-link" href="#Home">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Instructors</a>
+              <a class="nav-link" href="#Courses">Courses</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Instructors">Instructors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -54,57 +60,59 @@
     <!--Home section start-->
     <section>
       <div
-        class="vh-100 bg-primary text-center d-flex justify-content-center align-items-center flex-column text-white"
+        class="home-layer bg-primary d-flex justify-content-center align-items-center flex-column text-white"
       >
-        <h1 class="fw-bold">Build Your Tech Career With TechVerse</h1>
-        <p>Learn Web, Backend, UI/UX, and AI with industry experts</p>
-        <button class="btn btn-primary btn-lg mt-3">Explore Courses</button>
+        <h1 class="fw-bold text-center display-5">
+          Build Your Tech Career With TechVerse
+        </h1>
+        <p class="lead text-center py-2">
+          Learn Web, Backend, UI/UX, and AI with industry experts
+        </p>
+        <button class="btn btn-primary btn-lg mt-2">Explore Courses</button>
       </div>
     </section>
     <!--Home section end-->
 
     <!--Courses section start-->
-    <section class="py-5 bg-white">
+    <section id="Courses" class="pt-5">
       <h2 class="text-center fw-bold mb-5">Popular Courses</h2>
       <div class="container">
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow">
-              <div class="card-body p-5 text-center">
-                <i class="fa-solid fa-code fa-2x text-primary mb-4"></i>
+        <div
+          class="row pb-5 d-flex align-items-center g-3 justify-content-center"
+        >
+          <div class="col-sm-4">
+            <div class="card h-100 shadow">
+              <div class="card-body p-2 text-center">
+                <i class="fa-solid fa-code fa-2x text-primary mb-2"></i>
                 <h5 class="card-title">Web Development</h5>
-                <p class="card-text text-muted mb-4">
-                  HTML, CSS, JS, React, Next.js
-                </p>
-                <a href="#" class="btn btn-outline-primary btn-sm px-4"
+                <p class="card-text mb-4">HTML, CSS, JS, React, Next.js</p>
+                <a href="#" class="btn btn-outline-primary btn-sm px-2"
                   >View Details</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow">
-              <div class="card-body p-5 text-center">
-                <i class="fa-solid fa-server fa-2x text-primary mb-4"></i>
+          <div class="col-sm-4">
+            <div class="card h-100 shadow">
+              <div class="card-body p-2 text-center">
+                <i class="fa-solid fa-server fa-2x text-primary mb-2"></i>
                 <h5 class="card-title">Backend Development</h5>
-                <p class="card-text text-muted mb-4">
-                  Node.js, Express, MongoDB
-                </p>
-                <a href="#" class="btn btn-outline-primary btn-sm px-4"
+                <p class="card-text mb-4">Node.js, Express, MongoDB</p>
+                <a href="#" class="btn btn-outline-primary btn-sm px-2"
                   >View Details</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow">
-              <div class="card-body p-5 text-center">
-                <i class="fa-solid fa-pen-nib fa-2x text-primary mb-4"></i>
+          <div class="col-sm-4">
+            <div class="card h-100 shadow">
+              <div class="card-body p-2 text-center">
+                <i class="fa-solid fa-pen-nib fa-2x text-primary mb-2"></i>
                 <h5 class="card-title">UI / UX Design</h5>
-                <p class="card-text text-muted mb-4">Figma, UX Research</p>
-                <a href="#" class="btn btn-outline-primary btn-sm px-4"
+                <p class="card-text mb-4">Figma, UX Research</p>
+                <a href="#" class="btn btn-outline-primary btn-sm px-2"
                   >View Details</a
                 >
               </div>
@@ -116,37 +124,38 @@
     <!--Courses section end-->
 
     <!--Why choose us section start-->
-    <section class="bg- pt-5 bg-light">
+    <section class="pt-5 bg-light">
       <h2 class="text-center fw-bold">Why Choose TechVerse?</h2>
-
-      <div
-        class="text-center d-flex justify-content-evenly align-content-center flex-column flex-md-row gap-2 pt-4"
-      >
-        <div>
-          <i class="fa-solid fa-chalkboard-user fa-2x text-primary mb-3"></i>
-          <h3>Expert Mentors</h3>
-          <p>Learn from real-world developers.</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-laptop-code fa-2x text-primary mb-3"></i>
-          <h3>Hands-on Projects</h3>
-          <p>Build real portfolio projects.</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-briefcase fa-2x text-primary mb-3"></i>
-          <h3>Career Support</h3>
-          <p>CV reviews & job preparation.</p>
+      <div class="container">
+        <div
+          class="text-center d-flex justify-content-evenly align-content-center flex-column flex-md-row gap-5 py-5"
+        >
+          <div>
+            <i class="fa-solid fa-chalkboard-user fa-2x text-primary mb-3"></i>
+            <h3>Expert Mentors</h3>
+            <p fs>Learn from real-world developers.</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code fa-2x text-primary mb-3"></i>
+            <h3>Hands-on Projects</h3>
+            <p>Build real portfolio projects.</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-briefcase fa-2x text-primary mb-3"></i>
+            <h3>Career Support</h3>
+            <p>CV reviews & job preparation.</p>
+          </div>
         </div>
       </div>
     </section>
     <!--Why choose us section end-->
 
     <!--Instructors section start-->
-    <section class="pt-5" id="Instructors">
+    <section class="pt-4 pb-5" id="Instructors">
       <h2 class="text-center fw-bold">Meet Our Instructors</h2>
       <div class="container">
         <div
-          class="parent pt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+          class="parent text-center pt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
         >
           <div class="child1 shadow">
             <div class="card">
@@ -203,6 +212,161 @@
         </div>
       </div>
     </section>
+    <!--Instructors section end-->
+
+    <!--Pricing section start-->
+    <section id="Pricing" class="bg-light text-center py-5 mt-5">
+      <div class="container">
+        <h2 class="fw-bold pb-4">Pricing Plans</h2>
+
+        <div class="row g-4 align-items-center justify-content-center">
+          <div class="col-md-4 col-12">
+            <div class="card shadow border-0 h-100">
+              <div class="card-body p-4 py-5">
+                <h5 class="card-title fw-bold">Starter</h5>
+                <h2 class="text-primary">$49</h2>
+                <p class="card-text mb-4">
+                  Access to 3 courses Community Support
+                </p>
+                <a href="#" class="btn btn-outline-primary w-100"
+                  >Choose Plan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-12">
+            <div class="card shadow border-primary h-100">
+              <div class="card-body p-4 py-5">
+                <h5 class="card-title fw-bold">Professional</h5>
+                <h2 class="text-primary my-3">$99</h2>
+                <p class="card-text mb-4">All Courses Live Mentorship</p>
+                <a href="#" class="btn btn-primary w-100">Best Choice</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-12">
+            <div class="card shadow border-0 h-100">
+              <div class="card-body p-4 py-5">
+                <h5 class="card-title fw-bold">Ultimate</h5>
+                <h2 class="text-primary my-3">$199</h2>
+                <p class="card-text">Unlimited Access Career Coaching</p>
+                <a href="#" class="btn btn-outline-primary w-100"
+                  >Choose Plan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Pricing section end-->
+
+    <!--FAQ section start -->
+    <section class="pt-5 pb-5">
+      <h2 class="text-center fw-bold mb-4">FAQ</h2>
+      <div class="container">
+        <div class="accordion w-100 w-md-75 mx-auto" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Do I need prior experience?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>No — we teach from scratch.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Do you provide certificates?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>Yes — after course completion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FAQ section end-->
+
+    <!--Contact section start -->
+    <section id="Contact" class="bg-dark text-white py-5 mt-3">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-4">Contact Us</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-6">
+            <div class="bg-white p-4 rounded shadow text-dark">
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 fw-bold">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Contact section end -->
+
+    <footer class="bg-black py-2 py-md-4 text-center text-white">
+      <div class="container">
+        <p class="mb-0">© 2026 TechVerse Academy. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
